@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="./css/signup.css">
+</head>
+<body>
+    <main>
+
+        <legend>sign up here</legend>
+        <form action="">
+            <label for="name">firstname</label>
+            <input type="text" name="firstname" placeholder="firstname" id="firstname">
+
+            <label for="name">lastname</label>
+            <input type="text" name="lastname" placeholder="lastname" id="lastname">
+
+            <label for="username">username</label>
+            <input type="text" name="username" placeholder="username" id="username">
+
+            <label for="password">password</label>
+            <input type="password" name="password" placeholder="password" id="password">
+
+            <label for="password">confirm password</label>
+            <input type="password" name="confirm-password" placeholder="confirm password" id="confirm-password">
+
+            <label for="phone-number">phone-number</label>
+            <input type="number" name="phone-number" placeholder="phone-number" id="phone-number">
+
+            <label for="Email Address">Email Address</label>
+            <input type="email" name="Email address" placeholder="email address" id="email-address">
+
+            <label for="gender">gender</label>
+            <input type="gender" id="gender" name="gender" placeholder="gender">
+
+            <div class="radio">
+                <p>
+                    Check the languages you are most proficient in.
+                </p>
+                <div>
+                    <label for="HTML"> HTML</label>
+                    <input type="radio" name="chooseone" value="HTML">
+                </div>
+                <div>
+                    <label for="CSS"> CSS</label>
+                    <input type="radio" name="chooseone" value="CSS">
+                </div>
+                <div>
+                    <label for="JS"> JS</label>
+                    <input type="radio" name="chooseone" value="JS">
+                </div>
+                <div>
+                    <label for="PHP"> PHP</label>
+                    <input type="radio" name="chooseone" value="PHP">
+                </div>
+                <div>
+                    <label for="Ruby"> Ruby</label>
+                    <input type="radio" name="chooseone" value="Ruby">
+                </div>
+                <div>
+                    <label for="INTERCAL"> INTERCAL</label>
+                    <input type="radio" name="chooseone" value="INTERCAL">
+                </div>
+
+            </div>
+            <div class="checkbox">
+                <h4>check to agree.</h4>
+                <p>
+                    <label for="terms">I have read the terms and conditions.</label>
+                    <input type="checkbox" name="terms" id="terms" />
+                </p>
+
+                <p class="checkbox">
+                    <label for="offers">I agree that you can contact me regarding special.</label>
+                    <input type="checkbox" name="offers" id="offers" checked="checked" />
+                </p>
+            </div>
+            <label for="textarea">describe yourself</label>
+
+            <textarea name="desc" id="" cols="10" rows="10"></textarea>
+
+            <button type="submit">sign up</button>
+        </form>
+
+
+    </main>
+
+    <script src="./js/signup.js"></script>
+</body>
+</html>
