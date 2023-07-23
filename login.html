@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>sign In</title>
+    <title>sign In</title>
     <link rel="stylesheet" href="./css/login.css">
 </head>
+
 <body>
-     <main>
+    <main>
         <div>
             <h1>customer login</h1>
         </div>
         <form action="">
+            <div class="form-div">
+                <label for="Email Address">Email Address</label>
+                <input type="username" name="username" placeholder="username" id="username">
+                <small>error</small>
+                <hr style="width: 49vw;margin-left: 10px;background-color: black; height: 1px;">
+            </div>
+            <div class="form-div">
+                <label for="password">password</label>
+                <input type="password" name="password" placeholder="password" id="pass">
+                <small>error</small>
+                <hr style="width: 49vw; margin-left: 10px; background-color: black; height: 1px;">
+            </div>
 
-            <label for="Email Address">Email Address</label>
-            <input type="username" name="username" placeholder="username">
-            <hr style="width: 49vw;margin-left: 10px;background-color: black; height: 1px;">
 
-            <label for="password">password</label>
-            <input type="password" name="password" placeholder="password">
-            <hr style="width: 49vw; margin-left: 10px; background-color: black; height: 1px;">
+
 
             <button type="submit">sign in</button>
 
@@ -28,4 +37,5 @@
     </main>
     <script src="./js/login.js"></script>
 </body>
+
 </html>

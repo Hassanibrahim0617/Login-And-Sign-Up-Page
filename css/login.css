@@ -38,7 +38,19 @@ label {
     margin-left: 10px;
     margin-top: 20px;
 }
-
+small{
+    display: none;
+    text-transform: lowercase;
+    font-size: 12px;
+    color:#e70707ef ;
+    margin-left: 30px;
+}
+form .error  hr{
+    border: 1px solid #e70707ef;
+}
+form .success hr{
+    border: 1px solid #2ab90a97;
+}
 button {
     text-transform: uppercase;
     margin-top: 2rem;

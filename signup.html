@@ -1,40 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
     <link rel="stylesheet" href="./css/signup.css">
 </head>
+
 <body>
     <main>
-
         <legend>sign up here</legend>
         <form>
-            <label for="name">firstname</label>
-            <input type="text" name="firstname" placeholder="firstname" id="firstname">
-
-            <label for="name">lastname</label>
-            <input type="text" name="lastname" placeholder="lastname" id="lastname">
-
-            <label for="username">username</label>
-            <input type="text" name="username" placeholder="username" id="username">
-
-            <label for="password">password</label>
-            <input type="password" name="password" placeholder="password" id="password">
-
-            <label for="password">confirm password</label>
-            <input type="password" name="confirm-password" placeholder="confirm password" id="confirm-password">
-
-            <label for="phone-number">phone-number</label>
-            <input type="number" name="phone-number" placeholder="phone-number" id="phone-number">
-
-            <label for="Email Address">Email Address</label>
-            <input type="email" name="Email address" placeholder="email address" id="email-address">
-
-            <label for="gender">gender</label>
-            <input type="gender" id="gender" name="gender" placeholder="gender">
-
+            <div>
+                <label for="name">firstname</label>
+                <input type="text" name="firstname" placeholder="firstname" id="firstname">
+                <small>error</small>
+            </div>
+            <div>
+                <label for="name">lastname</label>
+                <input type="text" name="lastname" placeholder="lastname" id="lastname">
+                <small>error</small>
+            </div>
+            <div>
+                <label for="username">username</label>
+                <input type="text" name="username" placeholder="username" id="username">
+                <small>error</small>
+            </div>
+            <div>
+                <label for="password">password</label>
+                <input type="password" name="password" placeholder="password" id="password">
+                <small>error</small>
+            </div>
+            <div>
+                <label for="password">confirm password</label>
+                <input type="password" name="confirm-password" placeholder="confirm password" id="confirm-password">
+                <small>error</small>
+            </div>
+            <div>
+                <label for="phone-number">phone-number</label>
+                <input type="number" name="phone-number" placeholder="phone-number" id="phone-number">
+                <small>error</small>
+            </div>
+            <div>
+                <label for="Email Address">Email Address</label>
+                <input type="email" name="Email address" placeholder="email address" id="email-address">
+                <small>error</small>
+            </div>
+            <div>
+                <label for="gender">gender</label>
+                <input type="gender" id="gender" name="gender" placeholder=" select gender">
+                <small>error</small>
+            </div>
             <div class="radio">
                 <p>
                     Check the languages you are most proficient in.
@@ -73,20 +90,19 @@
                 </p>
 
                 <p class="checkbox">
-                    <label for="offers">I agree that you can contact me regarding special.</label>
+                    <label for="offers">contact me regarding special feature.</label>
                     <input type="checkbox" name="offers" id="offers" checked="checked" />
                 </p>
             </div>
-            <label for="textarea">describe yourself</label>
+            <label for="textarea" class="textarea">describe yourself</label>
 
-            <textarea name="desc" id="" cols="10" rows="10"></textarea>
+            <textarea name="describe" id="textarea" cols="10" rows="10"></textarea>
 
             <button type="submit">sign up</button>
         </form>
-
-
     </main>
 
     <script src="./js/signup.js"></script>
 </body>
+
 </html>

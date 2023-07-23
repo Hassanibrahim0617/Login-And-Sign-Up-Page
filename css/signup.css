@@ -11,33 +11,48 @@ form{
     display: flex;
      flex-direction: column;
      margin: 1rem 3rem;
-     max-width: 100vw;
+     max-width: 40vw;
+     /* height: ; */
      min-width: 300px;
+     border: .5px solid black;
+     background-color:  #ffffff;
+     margin-left: 25%;
+     padding-top: 10px;
+    scroll-behavior: smooth;
 }
 
 legend {
     text-transform: uppercase;
     font-size: 30px;
-    margin: 1rem 0 0 25% ;
+    margin: 1rem 0 0 37% ;
 }
 label{
     margin-left: 30px;
     text-transform: uppercase;
+    font-size: 12px;
   }
 
 input {
-    max-width: 50%;
-    min-width: 30vw;
-    padding: 10px 20px;
+    max-width: 30%;
+    min-width: 30px;
+    padding: 10px 15px;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 10px;
     border: none;
-    margin: 1rem ;
+    margin: .5rem ;
+    margin-left: 1rem;
     text-transform: uppercase;
 }
 textarea{
-    width: 50%;
-    margin-left: 1rem;
+    width: 55%;
+    margin-left: 2rem;
+    margin-top: .5rem;
+    text-decoration: underline;
+}
+.textarea{
+    margin-left:6rem;
+    margin-top: .5rem;
+    text-decoration: underline;
 }
 .radio{
     display: flex;
@@ -46,25 +61,26 @@ textarea{
     
 }
 .radio p{
-    font-size: 16px;
+    font-size: 12px;
     text-transform: uppercase;
-    margin-left: 4rem;
-    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-bottom: .5rem;
 }
 
 .radio div input{
     width: 10%;
-    margin: 0 29rem 0 1rem;
+    margin: 0 10rem 0 .5rem;
     float: right;
 }
 .radio div label{
     margin-left: 3rem;
-    width: 20%;
+    width: 10%;
 }
 .checkbox h4{
     text-transform: uppercase;
     margin-left: 4rem;
     margin-top: 1rem;
+    font-size: 14px;
 }
 .checkbox p{
     font-size: 12px;
@@ -73,10 +89,22 @@ textarea{
 .checkbox input{
     margin-left: 0;
 }
+small{
+    display: none;
+    margin-left: 4rem;
+    text-transform: capitalize;
+    color: #e70707ef;
+}
+form .error input{
+    border: 1px solid #e70707ef;
+}
+form .success input{
+    border: 1px solid #2ab90a97;
+}
 
 button {
-    margin: 2rem 60% 2rem 6rem;
-    padding: 7px 15px;
+    margin: 2rem 50% 2rem 6rem;
+    padding: 10px 25px;
     border-radius: 10px;
     background-color: #666;
     color: hsl(210, 31%, 5%);
