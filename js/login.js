@@ -4,6 +4,7 @@ const pass = document.querySelector('#pass');
 const formDiv = document.querySelectorAll('.form-div');
 
 function validate() {
+    // username 
     if (username.value.trim() === '') {
         let formDiv = username.parentElement;
         let errorMsg = formDiv.querySelector('small');
@@ -19,6 +20,7 @@ function validate() {
         formDiv.classList.remove('error');
     }
 
+    // password
     if (pass.value.trim() === '') {
         let formDiv = pass.parentElement;
         let errorMsg = formDiv.querySelector('small');
@@ -35,9 +37,14 @@ function validate() {
     }
 }
 
-form.addEventListener('submit', checkLogin);
-function checkLogin(event) {
-    event.preventDefault();
-    console.dir(event);
+form.addEventListener('submit',(e)=>{
+    e.preventDefault();  
     validate();
-};
+    // console.dir(e);
+});
+let hostname = document.querySelector('h4 span')
+let userGet = localStorage.getItem('user');
+let objData = JSON.parse(userGet)
+hostname.textContent = objData.fname
+
+

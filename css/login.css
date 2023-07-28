@@ -23,13 +23,14 @@ form {
     display: flex;
     flex-direction: column;
     max-width: 50%;
+    min-width: 200px;
 }
 
 input {
     border: hidden;
     background: #fff;
     cursor: pointer;
-    width: 300%;
+    width: 250px;
     padding: 10px 20px;
     margin: 10px 20px 0 10px;
 }
@@ -54,7 +55,7 @@ form .success hr{
 button {
     text-transform: uppercase;
     margin-top: 2rem;
-    margin-left: 10px;
+    margin-left: 25px;
     border: none;
     border-radius: 10px;
     padding: 10px 35px;

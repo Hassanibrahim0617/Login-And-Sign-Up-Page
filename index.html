@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="./css/signup.css">
+</head>
+
+<body>
+    <main>
+        <legend>sign up here</legend>
+        <form>
+            <div>
+                <label for="name">firstname</label>
+                <input type="text" name="firstname" placeholder="firstname" id="firstname">
+                <small>error</small>
+            </div>
+            <div>
+                <label for="name">lastname</label>
+                <input type="text" name="lastname" placeholder="lastname" id="lastname">
+                <small>error</small>
+            </div>
+            <div>
+                <label for="username">username</label>
+                <input type="text" name="username" placeholder="username" id="username">
+                <small>error</small>
+            </div>
+            <div>
+                <label for="password">password</label>
+                <input type="password" name="password" placeholder="password" id="password">
+                <small>error</small>
+            </div>
+            <div>
+                <label for="password">confirm password</label>
+                <input type="password" name="confirm-password" placeholder="confirm password" id="confirm-password">
+                <small>error</small>
+            </div>
+            <div>
+                <label for="phone-number">phone-number</label>
+                <input type="number" name="phone-number" placeholder="phone-number" id="phone-number">
+                <small>error</small>
+            </div>
+            <div>
+                <label for="Email Address">Email Address</label>
+                <input type="email" name="Email address" placeholder="email address" id="email-address">
+                <small>error</small>
+            </div>
+            <div>
+                <label for="gender">gender</label>
+                <select name="gender" id="gender">
+                    <option value="select gender">select gender</option>
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                </select>
+                <small>error</small>
+            </div>
+
+            <div class="radio">
+                <p>
+                    Check the languages you are most proficient in.
+                </p>
+                <div>
+                    <label for="HTML"> HTML</label>
+                    <input type="radio" name="chooseone" value="HTML" id="htmlradio">
+                </div>
+                <div>
+                    <label for="CSS"> CSS</label>
+                    <input type="radio" name="chooseone" value="CSS" id="cssradio">
+                </div>
+                <div>
+                    <label for="JS"> JS</label>
+                    <input type="radio" name="chooseone" value="JS" id="jsradio">
+                </div>
+                <div>
+                    <label for="PHP"> PHP</label>
+                    <input type="radio" name="chooseone" value="PHP" id="phpradio">
+                </div>
+                <div>
+                    <label for="Ruby"> Ruby</label>
+                    <input type="radio" name="chooseone" value="Ruby" id="rubyradio">
+                </div>
+                <div>
+                    <label for="INTERCAL"> INTERCAL</label>
+                    <input type="radio" name="chooseone" value="INTERCAL" id="intercalradio">
+                </div>
+                <small>error</small>
+            </div>
+
+            <div class="checkbox">
+                <h4>check to agree.</h4>
+                <div>
+                     <label for="terms">I have read the terms and conditions.</label>
+                <input type="checkbox" name="terms" id="terms" />
+                <small>error</small>
+                </div>
+                <div>
+                     <label for="offers">contact me regarding special feature.</label>
+                <input type="checkbox" name="offers" id="offers" />
+                <small>error</small>
+                </div>
+               
+               
+               
+            </div>
+
+            <label for="textarea" class="textarea">describe yourself</label>
+            <textarea name="describe" id="textarea" cols="10" rows="10"></textarea>
+
+           <button type="submit">sign up</button>
+        </form>
+         <a href="./login.html">login</a>
+    </main>
+
+    <script src="./js/signup.js"></script>
+</body>
+
+</html>
